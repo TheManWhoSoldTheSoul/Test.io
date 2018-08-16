@@ -48,21 +48,21 @@
     .this_work:nth-child(1)::before{
 		/*414 / 812*/
 		/*background-image: url();*/
-		background-image: url(https://lh4.googleusercontent.com/8OlX4BJPq8ulT2RvRCaHX3l-al5zMkh4W5aJEdo03xNNtqrl-4MfX_hGGozd15ZQYImCTM48vcLXAgbB9mj5=w2880-h1800-rw);
+		background-image: url(../Imgs/work_crash1.png);
 	}
     .this_work:nth-child(2){
         background-color: #c70214;
     }
     
     .this_work:nth-child(2)::before{
-        background-image: url(https://lh4.googleusercontent.com/Id5e_Jf72ya_JKXX-lZBT1v97vWHfBd_XdR-eDL_Y679M2kzUum9D2pZchy3BqXbgsMiFlRjE34k2Zr64YpU=w2880-h1800-rw);
+        background-image: url(../Imgs/work_specter1.png);
     }
     .this_work:nth-child(3){
         background-color: #111517;
     }
     
     .this_work:nth-child(3)::before{
-        background-image: url(https://lh3.googleusercontent.com/7DhbYq1-2Z7zag9cE-IgPaeI84Tnd9lhMVbVyqm0Kou4WPofgFDRMRg7awbZDV4wqWUX4EpIt6qurcMEdASN=w2880-h1800-rw);
+        background-image: url(../Imgs/work_realm.png);
     }
     
     .this_work > span > h2{
