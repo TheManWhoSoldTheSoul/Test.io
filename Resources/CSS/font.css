@@ -9,6 +9,11 @@
 }
 
 @font-face{
+    font-family: 'Montserrat-Regular';
+    src:url(../../Resources/Font/Montserrat/Montserrat-Regular.otf);
+}
+
+@font-face{
     font-family: 'Montserrat-SemiBold';
     src:url(../../Resources/Font/Montserrat/Montserrat-SemiBold.otf);
 }
