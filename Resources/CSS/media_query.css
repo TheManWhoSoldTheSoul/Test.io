@@ -8,16 +8,23 @@
         opacity: .25;*/
     }
     .head_logo{
-        width: 2.5em;
+        width: 3em;
         height: 4em;
+        background-size: 50%;
     }
     .logo{
         width: 80%;
     }
-    .logo > span{
-        font-size: 9px;
+    .logo > span > h3{
+        font-size: 10px;
+        letter-spacing: 7px;
     }
-    
+    .logo > span > h4{
+        font-size: 8px;
+        letter-spacing: 6px;
+        	padding-left:6px;
+
+    }
     .mobile_menu_btn{
         display: block;
     }
@@ -25,54 +32,95 @@
    
     
     
-    
+    .view_work{
+        overflow: auto;
+    }
     .this_work{
         width: 100%;
         height: 33.33%;
     }
     
     .this_work > span{
-        height: 50%;
+        height: 75%;
+        padding-top: 20%;
+
     }
     .this_work::before{
         opacity: .5;
         background-size: cover;
     }
     .this_work:hover::before{
-        opacity: .5;
         transform: none;
     }
-    .this_work:nth-child(1){
-        background-color: #151635;
+    
+    .this_work:actived::before{
+        opacity: .25;
     }
-    .this_work:nth-child(1)::before{
+    
+    /*.this_work:nth-child(1){
+        background-color: #151635;
+    }*/
+    .this_work:nth-child(1)::before, .cow_level > div:nth-child(1){
 		/*414 / 812*/
 		/*background-image: url();*/
 		background-image: url(../Imgs/work_crash1.png);
 	}
-    .this_work:nth-child(2){
+    .this_work:nth-child(2):actived{
         background-color: #c70214;
     }
     
-    .this_work:nth-child(2)::before{
+    .this_work:nth-child(2)::before, .specter > div:nth-child(1){
         background-image: url(../Imgs/work_specter1.png);
     }
-    .this_work:nth-child(3){
+    /*.this_work:nth-child(3){
         background-color: #111517;
-    }
+    }*/
     
-    .this_work:nth-child(3)::before{
+    .this_work:nth-child(3)::before, .vision_realm > div:nth-child(1);{
         background-image: url(../Imgs/work_realm.png);
     }
     
     .this_work > span > h2{
         font-size: 22px;
     }
+    .this_work:hover > span{
+        height: 75%;
+    }
+    
+    
+    .view_work > section > div{
+        width: 100%!important;
+    }
+    .view_work > section > div:nth-child(1){
+        height: 33.33%;
+    }
+    .view_work > section > div:nth-child(2){
+        height: 70%;
+    }
+    .info{
+        width: 75%;
+        margin: 0 auto;
+        top: 20%;
+    }
+    
+    .info > p{
+        margin-top: 10%;
+    }
+    
+    .info > a{
+        width: 100%;
+        height: 4em;
+        line-height: 4em;
+        font-size: 14px;
+
+    }
+
     
     
     .contact > div:nth-child(1){
         width: 90%;
-            margin-left: 5%;
+        margin-left: 5%;
+        top:20%;
 
     }
     
@@ -91,6 +139,8 @@
         letter-spacing: 10px;
         overflow: hidden;
         text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
         /*text-shadow: 0px 5px 2px #111;*/
     }
     .contact > div > h3{
@@ -101,7 +151,7 @@
         height: 150%;
         margin-left: 5%;
         margin-top: auto;
-        background: linear-gradient(to bottom, #da1921, transparent);
+        background: linear-gradient(to bottom, #fff, transparent);
     }
     
     .contact > div:nth-child(2){
