@@ -3,22 +3,28 @@ window.onload = function(){
     
     var loading = document.getElementsByClassName('loading')[0];
     
-    
+     setTimeout(function(){
         loading.classList.add("loaded");
+     },1500);
     setTimeout(function(){
         loading.style.display="none";
-    },1000);
+    },2000);
     setTimeout(function(){
         A = "to_work";
         B = "to_contact";
         C = "to_home";
         nav_main_content();
-    }, 250);
+    }, 750);
+   
     
 }
 
+
+
 var main_content = document.getElementsByClassName("main_content")[0];
 var link_click = document.getElementsByClassName("link");
+
+
 
 var load_bar = document.getElementsByClassName('load_bar')[0];
 
@@ -38,7 +44,10 @@ function nav_main_content(){
         main_content.classList.add(C);
     }, 1000);
     
-    
+    if(main_content.classList.contains("to_home")){
+        
+        
+    }
     setTimeout(function(){
         var i;
         for (i = 1; i < 3; i++) { 
@@ -47,7 +56,19 @@ function nav_main_content(){
         }
     },2000);
     
+}
+
+    var magic_line = document.getElementsByClassName("magic_line")[0];
+
+
+function my_magic_line(){
     
+    var distance_X = link_click[F].offsetLeft;
+    var line_width = link_click[F].offsetWidth;
+    var distance_Y = link_click[1].offsetHeight;
+    magic_line.style.width=(line_width + 'px');
+    magic_line.style.left=((distance_X  + 0.5) + 'px');
+    magic_line.style.bottom=((distance_Y - 5) + 'px');
 }
 
 function actived_link(){
@@ -76,6 +97,7 @@ link_click[0].onclick = function(){
     C = "to_home";
     nav_main_content();
     desactiv_link();
+    magic_line.style.width="0";
 }
 
 link_click[1].onclick = function(){
@@ -91,7 +113,9 @@ link_click[1].onclick = function(){
     actived_link();
     
     nav_main_content();
-
+    
+    my_magic_line();
+    
 
 }
 
@@ -109,6 +133,8 @@ link_click[2].onclick = function(){
     actived_link();
     
     nav_main_content();
+    
+    my_magic_line();
     
 }
 
